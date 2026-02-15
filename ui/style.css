@@ -1,0 +1,41 @@
+body {
+  background:#0f172a;
+  font-family:Arial;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  color:white;
+}
+
+.card{
+  background:#020617;
+  padding:30px;
+  border-radius:12px;
+  text-align:center;
+  width:300px;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns:repeat(3,80px);
+  gap:10px;
+  justify-content:center;
+  margin:20px 0;
+}
+
+.cell{
+  width:80px;
+  height:80px;
+  background:#1e293b;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+  cursor:pointer;
+  border-radius:8px;
+}
+
+.cell.selected{
+  border:2px solid #22c55e;
+}
